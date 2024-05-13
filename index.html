@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Test Drag & Drop</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h2>Simple drag and drop</h2>
+    <div>The blue box can be dragged into the red one.</div>
+    <div id="boxA" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img
+        id="drag1"
+        src="./img/TestDD1.svg"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="70"
+        height="70"
+      />
+    </div>
+    <div id="boxB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
