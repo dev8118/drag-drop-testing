@@ -1,22 +1,20 @@
 <html>
   <head>
     <title>Test Drag & Drop</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>Simple drag and drop</h2>
+    <h1>Drag & Drop</h1>
     <div>The blue box can be dragged into the red one.</div>
-    <div id="boxA" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <img
-        id="drag1"
-        src="./img/TestDD1.svg"
-        draggable="true"
-        ondragstart="drag(event)"
-        width="70"
-        height="70"
-      />
+    
+    <div id="left_box" class="dropzone">
+      <div id="mydiv" class="drawalDiv">
+        <img src="./img/TestDD1.svg" width="70" height="70" />
+      </div>
     </div>
-    <div id="boxB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="red_box" class="dropzone red_box">
+
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
